@@ -1,4 +1,4 @@
-name: Deploy to S3
+name: Deploy to S3.
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: S3 Sync
+    - name: S3 Sync.
       uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --exclude '.git/*' --exclude '.github/*' --delete
